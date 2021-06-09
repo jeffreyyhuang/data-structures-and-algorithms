@@ -23,3 +23,19 @@ let removeDuplicates = (list) => {
   }
 }
 
+/*
+// Testing Remove Dups
+let linkedList = new LinkedList();
+linkedList.add(2);
+linkedList.add(4);
+linkedList.add(3);
+linkedList.add(2);
+linkedList.add(7);
+linkedList.add(9);
+linkedList.add(3);
+console.log('Contents of linkedList: ');
+linkedList.printList()
+removeDuplicates(linkedList);
+console.log('After removing duplicates: ');
+linkedList.printList()
+*/
