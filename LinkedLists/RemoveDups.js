@@ -5,21 +5,21 @@ FOLLOW UP
 How would you solve this problem if a temporary buffer is not allowed?
 */
 
-let removeDuplicates = (LinkedList) => {
+let removeDuplicates = (list) => {
   let storage = {};
 
-  this = LinkedList;
-  let currentNode = this.head;
-  let prevNode;
+  let currentNode = list.head;
+  let prevNode = null;
 
   while (currentNode !== null) {
-    prevNode = currentNode;
     if (!storage[currentNode.val]) {
       storage[currentNode.val] = 1;
+      prevNode = currentNode;
     } else {
+      storage[currentNode.val]++;
       prevNode.next = currentNode.next;
-      currentNode = currentNode.next;
     }
+    currentNode = currentNode.next;
   }
 }
 
