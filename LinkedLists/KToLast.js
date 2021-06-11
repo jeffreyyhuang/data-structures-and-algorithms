@@ -15,6 +15,9 @@ let kthToLast = (list, k) => {
   return currentNode.val;
 }
 
+// Without knowing the length of the LinkedList
+
+
 /*
 // Testing Remove Dups
 let linkedList = new LinkedList();
