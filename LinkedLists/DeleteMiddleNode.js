@@ -16,3 +16,23 @@ let deleteMiddleNode = (node) => {
   node.next = next.next;
   return true;
 }
+
+/*
+// Testing Delete Middle Node
+let linkedList = new LinkedList();
+linkedList.add('a');
+linkedList.add('b');
+linkedList.add('c');
+linkedList.add('d');
+linkedList.add('e');
+linkedList.add('f');
+linkedList.add('g');
+console.log('Contents of linkedList: ');
+linkedList.printList();
+
+let c = linkedList.head.next.next;
+
+deleteMiddleNode(c);
+console.log('After deleting node c: ');
+linkedList.printList();
+*/
